@@ -1,0 +1,31 @@
+name: __3d
+description: A 3D interactive physics application for the Yemeni curriculum.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  shared_preferences: ^2.3.2
+  model_viewer_plus: ^1.8.0
+  mobile_scanner: ^5.2.3
+
+# إضافة مكتبة توليد الأيقونات
+dev_dependencies:
+  flutter_launcher_icons: ^0.13.1
+
+# إعدادات الأيقونة التي سيتم توليدها
+flutter_icons:
+  android: true
+  ios: false
+  image_path: "assets/images/app_icon.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/models/
